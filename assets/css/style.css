@@ -374,6 +374,11 @@
      gap: 30px;
  }
 
+ .active {
+     background: white;
+     color: #000;
+ }
+
  .categories a {
      text-align: center;
      padding: 10px 0;
@@ -387,7 +392,6 @@
  }
 
  select {
-     appearance: none;
      background: none;
      border: none;
      cursor: pointer;
@@ -885,6 +889,10 @@
 
  .description-comments p {
      color: #9E9E9D;
+ }
+
+ .btn-comments .btn {
+     padding: 13px 49px;
  }
 
  /* comments end */
