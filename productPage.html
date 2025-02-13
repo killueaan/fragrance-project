@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/media/images/logo/favicon.png" type="image/x-icon">
+    <title>Товар</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="header container">
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/media/images/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="icons">
+                <div class="icons">
+                    <a href="">
+                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="favor">
+                            <path
+                                d="M26.0501 6.64064C25.4117 6.00189 24.6537 5.49519 23.8193 5.14949C22.985 4.80379 22.0908 4.62585 21.1876 4.62585C20.2845 4.62585 19.3903 4.80379 18.556 5.14949C17.7216 5.49519 16.9636 6.00189 16.3251 6.64064L15.0001 7.96564L13.6751 6.64064C12.3855 5.35102 10.6364 4.62652 8.81265 4.62652C6.98886 4.62652 5.23976 5.35102 3.95015 6.64064C2.66053 7.93025 1.93604 9.67934 1.93604 11.5031C1.93604 13.3269 2.66053 15.076 3.95015 16.3656L15.0001 27.4156L26.0501 16.3656C26.6889 15.7272 27.1956 14.9692 27.5413 14.1348C27.887 13.3005 28.0649 12.4062 28.0649 11.5031C28.0649 10.6 27.887 9.70577 27.5413 8.87144C27.1956 8.03712 26.6889 7.27908 26.0501 6.64064Z"
+                                stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="reg.html">
+
+                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="reg">
+                            <path
+                                d="M25 27.1281V24.6281C25 23.3021 24.4732 22.0303 23.5355 21.0926C22.5979 20.1549 21.3261 19.6281 20 19.6281H10C8.67392 19.6281 7.40215 20.1549 6.46447 21.0926C5.52678 22.0303 5 23.3021 5 24.6281V27.1281M20 9.62814C20 12.3896 17.7614 14.6281 15 14.6281C12.2386 14.6281 10 12.3896 10 9.62814C10 6.86672 12.2386 4.62814 15 4.62814C17.7614 4.62814 20 6.86672 20 9.62814Z"
+                                stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="">
+
+                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="bag">
+                            <path
+                                d="M3.75 8.37814L7.5 3.37814H22.5L26.25 8.37814M3.75 8.37814V25.8781C3.75 26.5412 4.01339 27.1771 4.48223 27.6459C4.95107 28.1148 5.58696 28.3781 6.25 28.3781H23.75C24.413 28.3781 25.0489 28.1148 25.5178 27.6459C25.9866 27.1771 26.25 26.5412 26.25 25.8781V8.37814M3.75 8.37814H26.25M20 13.3781C20 14.7042 19.4732 15.976 18.5355 16.9137C17.5979 17.8514 16.3261 18.3781 15 18.3781C13.6739 18.3781 12.4021 17.8514 11.4645 16.9137C10.5268 15.976 10 14.7042 10 13.3781"
+                                stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb container">
+        <p><a href="index.html">Главная</a> - <a href="catalog.html">Каталог</a> - <a href="productPage.html">Товар</a>
+        </p>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- card-tovar start -->
+    <div class="product-page">
+        <div class="card-tovar container ">
+            <div class="images-tovar">
+                <div class="main-img">
+                    <img src="assets/media/images/productP/1.jpg" alt="" class="ras">
+                </div>
+                <div class="other-photo">
+                    <img src="assets/media/images/productP/2.png" alt=""
+                        onclick="slider('assets/media/images/productP/1.jpg')">
+                    <img src="assets/media/images/productP/3.png" alt=""
+                        onclick="slider('assets/media/images/productP/3.jpg')">
+                    <img src="assets/media/images/productP/4.png" alt=""
+                        onclick="slider('assets/media/images/productP/4.jpg')">
+                </div>
+            </div>
+            <script>
+                function slider(image) {
+                    document.querySelector(".ras").src = image;
+                }
+            </script>
+            <div class="right-content">
+                <div class="feedbc">
+                    <div class="stars">
+
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.5 0.88353L9.18386 6.0659H14.6329L10.2245 9.26878L11.9084 14.4512L7.5 11.2483L3.09161 14.4512L4.77547 9.26878L0.367076 6.0659H5.81614L7.5 0.88353Z"
+                                fill="white" />
+                        </svg>
+
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.5 0.88353L9.18386 6.0659H14.6329L10.2245 9.26878L11.9084 14.4512L7.5 11.2483L3.09161 14.4512L4.77547 9.26878L0.367076 6.0659H5.81614L7.5 0.88353Z"
+                                fill="white" />
+                        </svg>
+
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.5 0.88353L9.18386 6.0659H14.6329L10.2245 9.26878L11.9084 14.4512L7.5 11.2483L3.09161 14.4512L4.77547 9.26878L0.367076 6.0659H5.81614L7.5 0.88353Z"
+                                fill="white" />
+                        </svg>
+
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.5 0.88353L9.18386 6.0659H14.6329L10.2245 9.26878L11.9084 14.4512L7.5 11.2483L3.09161 14.4512L4.77547 9.26878L0.367076 6.0659H5.81614L7.5 0.88353Z"
+                                fill="white" />
+                        </svg>
+
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.5 0.88353L9.18386 6.0659H14.6329L10.2245 9.26878L11.9084 14.4512L7.5 11.2483L3.09161 14.4512L4.77547 9.26878L0.367076 6.0659H5.81614L7.5 0.88353Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <p>135 отзывов</p>
+                </div>
+                <h1>
+                    Maison Francis Kurkdjian
+                    BACCARAT ROUGE 540
+                </h1>
+                <div class="weight">
+                    <p>Объем / мл</p>
+                    <div class="w-nums">
+                        <p>35</p>
+                        <p>75</p>
+                    </div>
+                </div>
+                <div class="price-sale">
+                    <div class="old-p">
+                        <p>32 700 ₽</p>
+                    </div>
+                    <p>29 000 ₽</p>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">Добавить в корзину</a>
+                    <div class="favorites">
+                        <a href="#">
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="favoritess">
+                                <path
+                                    d="M26.0501 6.64064C25.4117 6.00189 24.6537 5.49519 23.8193 5.14949C22.985 4.80379 22.0908 4.62585 21.1876 4.62585C20.2845 4.62585 19.3903 4.80379 18.556 5.14949C17.7216 5.49519 16.9636 6.00189 16.3251 6.64064L15.0001 7.96564L13.6751 6.64064C12.3855 5.35102 10.6364 4.62652 8.81265 4.62652C6.98886 4.62652 5.23976 5.35102 3.95015 6.64064C2.66053 7.93025 1.93604 9.67934 1.93604 11.5031C1.93604 13.3269 2.66053 15.076 3.95015 16.3656L15.0001 27.4156L26.0501 16.3656C26.6889 15.7272 27.1956 14.9692 27.5413 14.1348C27.887 13.3005 28.0649 12.4062 28.0649 11.5031C28.0649 10.6 27.887 9.70577 27.5413 8.87144C27.1956 8.03712 26.6889 7.27908 26.0501 6.64064Z"
+                                    stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="description-product container mt-150">
+            <div class="left-desc">
+                <h3>Описание</h3>
+                <h2>Maison Francis Kurkdjian BACCARAT ROUGE 540</h2>
+                <p>Парфюмерный экстракт Baccarat Rouge 540 усиливает сияние трех компонентов парфюмерной воды, не
+                    изменяя
+                    оригинального звучания. Отточенное мастерство парфюмера и мудрость, приобретенная со временем,
+                    привели к
+                    рождению этого древесного парфюмерного экстракта, ставшего истинным шедевром Франсиса Кюркджяна.
+                    Верхняя
+                    нота жасмина Грандифлорум мягко подчеркивает замысел мастера. Оттенок огня усиливается пудровыми
+                    гранями
+                    горького миндаля. Наконец, минеральная нота, построенная вокруг амбры, укрощена мускусным и
+                    древесным
+                    аккордом. Флакон, играя со светом, добавляет экстракту интенсивности. Он облачен в блестящую красную
+                    мантию, намекающую на красный цвет знаменитого хрусталя Baccarat. Парфюмерный экстракт Baccarat
+                    Rouge
+                    540 Maison Francis Kurkdjian воплощает собой изобилие и слияние компонентов, которые можно укротить
+                    только с помощью искусства парфюмера и мудрости, обретенной со временем.</p>
+            </div>
+            <div class="right-desc">
+                <h3>Подробные характеристики</h3>
+                <div class="all-desc">
+                    <p>страна: Франция</p>
+                    <p> тип продукта: экстракт </p>
+                    <p> для кого: унисекс</p>
+                    <p> группа ароматов: древесные, амбровые, цветочные</p>
+                    <p>верхние ноты: абсолю жасмина грандифлорум, аккорд шафрана</p>
+                    <p> средние ноты: белый кедр, горький миндаль</p>
+                    <p>базовые ноты: аккорд серой амбры, древесно-мускусный аккорд</p>
+                    <p>объём: 35 мл</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card-tovar end -->
+
+    <!-- comments start -->
+    <div class="comments-section container">
+        <div class="title-comments">
+            <h2>Отзывы</h2>
+        </div>
+        <div class="btn-comments">
+            <a href="#" class="btn">Оставить отзыв</a>
+        </div>
+    </div>
+    <div class="comments container">
+        <div class="comments-card">
+            <div class="person">
+                <div class="img-person">
+                    <img src="assets/media/images/productP/image.png" alt="">
+                </div>
+                <div class="description-person">
+                    <div class="name-person">
+                        <p>Евгения</p>
+                    </div>
+                    <div class="product">
+                        <p>BYBOZO-habibi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="description-comments">
+                <p>Я просто в восторге от этого аромата! Он легкий и свежий, идеально подходит для теплых дней. Ноты
+                    цитрусовых и моря создают ощущение отпуска. Держится на коже весь день, что для меня очень
+                    важно. Обязательно куплю еще раз!</p>
+            </div>
+            <div class="stars">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+            </div>
+        </div>
+
+        <div class="comments-card">
+            <div class="person">
+                <div class="img-person">
+                    <img src="assets/media/images/productP/image-1.png" alt="">
+                </div>
+                <div class="description-person">
+                    <div class="name-person">
+                        <p>Мария</p>
+                    </div>
+                    <div class="product">
+                        <p>PANTHEON ROMA raffaello</p>
+                    </div>
+                </div>
+            </div>
+            <div class="description-comments">
+                <p>Этот аромат стал моим фаворитом на вечерние выходы. Он глубокий и насыщенный, с нотами ванили и
+                    сандала. Друзья всегда спрашивают, чем я пахну! Единственный минус — стойкость могла бы быть лучше,
+                    но в целом я довольна.</p>
+            </div>
+            <div class="stars">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+            </div>
+        </div>
+
+        <div class="comments-card">
+            <div class="person">
+                <div class="img-person">
+                    <img src="assets/media/images/productP/image-1.png" alt="">
+                </div>
+                <div class="description-person">
+                    <div class="name-person">
+                        <p>Мария</p>
+                    </div>
+                    <div class="product">
+                        <p>PANTHEON ROMA raffaello</p>
+                    </div>
+                </div>
+            </div>
+            <div class="description-comments">
+                <p>Этот аромат стал моим фаворитом на вечерние выходы. Он глубокий и насыщенный, с нотами ванили и
+                    сандала. Друзья всегда спрашивают, чем я пахну! Единственный минус — стойкость могла бы быть лучше,
+                    но в целом я довольна.</p>
+            </div>
+            <div class="stars">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+                <img src="assets/media/images/productP/star.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- comments end -->
+
+    <!-- recomendation start -->
+    <div class="recomendation container mt-150">
+        <h2>С этим покупают</h2>
+    </div>
+    <div class="cards-of-products container mt-75">
+        <div class="pr-card">
+            <div class="img-pr">
+                <img src="assets/media/images/hits/image.png" alt="">
+                <div class="heart">
+                    <img src="assets/media/images/hits/Heart.png" alt="">
+                </div>
+            </div>
+            <div class="cont-card">
+                <div class="text-card">
+                    <h3>ESSENTIAL PARFUMS PARIS NEROLI BOTANICA</h3>
+                </div>
+                <div class="pr-btn">
+                    <div class="price-sale">
+                        <p>10 420 ₽</p>
+                    </div>
+                    <a href="productPage.html" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+        <div class="pr-card">
+            <div class="img-pr">
+                <img src="assets/media/images/hits/image-1.png" alt="">
+                <div class="heart">
+                    <img src="assets/media/images/hits/Heart.png" alt="">
+                </div>
+            </div>
+            <div class="cont-card">
+                <div class="text-card">
+                    <h3>TOM FORD OMBRÉ LEATHER </h3>
+                </div>
+                <div class="pr-btn">
+                    <div class="price-sale">
+                        <div class="old-p">
+                            <p>14 360 ₽</p>
+                        </div>
+                        <p>10 220 ₽</p>
+                    </div>
+                    <a href="productPage.html" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+        <div class="pr-card">
+            <div class="img-pr">
+                <img src="assets/media/images/hits/image-2.png" alt="">
+                <div class="heart">
+                    <img src="assets/media/images/hits/Heart.png" alt="">
+                </div>
+            </div>
+            <div class="cont-card">
+                <div class="text-card">
+                    <h3>MIN NEW YORK ASTRONOMY DOMINE</h3>
+                </div>
+                <div class="pr-btn">
+                    <div class="price-sale">
+                        <p>18 630 ₽</p>
+                    </div>
+                    <a href="productPage.html" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+        <div class="pr-card">
+            <div class="img-pr">
+                <img src="assets/media/images/hits/image-3.png" alt="">
+                <div class="heart">
+                    <img src="assets/media/images/hits/Heart.png" alt="">
+                </div>
+            </div>
+            <div class="cont-card">
+                <div class="text-card">
+                    <h3>THOMAS KOSMALA № 4 APRÈS L'AMOUR</h3>
+                </div>
+                <div class="pr-btn">
+                    <div class="price-sale">
+                        <p>20 313 ₽</p>
+                    </div>
+                    <a href="productPage.html" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recomendation end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer container">
+            <div class="left-f">
+                <img src="assets/media/images/logo/logo.png" alt="">
+                <a href="tel:+7(999)6665544">8 (999) 666 55 44 </a>
+                <p>круглосуточный телефон call-центра</p>
+            </div>
+            <div class="right">
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="contacts.html">Контакты</a>
+                </nav>
+                <div class="social-links">
+                    <img src="assets/media/images/footer/vk.png" alt="">
+                    <img src="assets/media/images/footer/tg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
