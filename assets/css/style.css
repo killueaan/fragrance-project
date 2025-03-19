@@ -115,12 +115,6 @@
      .container {
          padding: 0 20px;
      }
- }
-
- @media screen and (max-width:740px) {
-     .container {
-         padding: 0 20px;
-     }
 
      h2 {
          font-size: 24px;
@@ -135,7 +129,9 @@
      }
  }
 
- @media screen and (max-width:1200px) {
+
+
+ @media screen and (max-width:900px) {
      .icons-all {
          display: none;
      }
@@ -187,7 +183,6 @@
          z-index: 1000;
          padding-top: 40px;
          transition: left 0.3s ease;
-         /* Добавляем плавный переход */
      }
 
      nav {
@@ -281,20 +276,7 @@
      color: black;
  }
 
- @media (max-width:1130px) {
-     h1 {
-         font-size: 44px;
-     }
-
-     .banner img {
-         position: absolute;
-         max-width: 500px;
-         right: 0;
-         top: -100px;
-     }
- }
-
- @media (max-width:890px) {
+ @media (max-width:900px) {
      .bg {
          height: 140%;
          background-repeat: no-repeat;
@@ -331,45 +313,6 @@
      .banner .btn {
          padding: 12px 15px;
          z-index: 101;
-     }
- }
-
- @media (max-width:630px) {
-     .bg {
-         background-size: 250%;
-     }
-
-
-     .banner {
-         align-items: center;
-         justify-content: space-between;
-         margin-top: 150px;
-         margin-bottom: 200px;
-         position: relative;
-     }
-
-     h1 {
-         font-size: 36px;
-         max-width: 80%;
-     }
-
-     .banner img {
-         position: absolute;
-         max-width: 350px;
-         right: 0;
-         top: 50px;
-         filter: brightness(70%);
-     }
-
-     .banner .btn {
-         padding: 12px 15px;
-         background: #000;
-         border: 1px solid white;
-     }
-
-     .banner .btn:hover {
-         background: white;
-         color: black;
      }
  }
 
@@ -427,41 +370,34 @@
 
  .adv-block h2 {
      color: white;
-     font-size: 24px;
+     font-size: 22px;
      font-weight: 400;
      text-transform: uppercase;
  }
 
- @media (max-width:1000px) {
+ @media (max-width:900px) {
      .adv-blocks {
          display: grid;
          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
          justify-content: space-between;
      }
 
-     .adv-block h2 {
-         font-size: 20px;
-     }
-
-     .adv-block img {
-         max-width: 55px;
-         background-size: cover;
-     }
- }
-
- @media (max-width:830px) {
      .adv-blocks {
          gap: 10px;
+     }
+
+     .adv-block h2 {
+         font-size: 18px;
      }
 
      .adv-block {
          gap: 10px;
      }
 
-     .adv-block h2 {
-         font-size: 16px;
+     .adv-block img {
+         max-width: 55px;
+         background-size: cover;
      }
-
  }
 
 
@@ -590,6 +526,7 @@
 
  @media(max-width:1400px) {
      .content-promo {
+         margin-top: 100px;
          margin-left: 30px;
      }
 
@@ -605,23 +542,6 @@
      }
  }
 
- @media(max-width:1200px) {
-     .content-promo {
-         max-width: 100%;
-         margin-left: 0;
-         margin-top: 130px;
-     }
-
-
-     .promo h2 {
-         font-size: 40px;
-     }
-
-     .images-promo img {
-         background-size: 100%;
-         width: 500px;
-     }
- }
 
  @media(max-width:900px) {
      .images-promo img {
@@ -677,7 +597,7 @@
      padding: 11px 63px;
  }
 
- @media (max-width:745px) {
+ @media (max-width:900px) {
      .cards-of-products .container {
          padding: 5px;
      }
@@ -783,7 +703,7 @@
      }
  }
 
- @media (max-width:500px) {
+ @media (max-width:600px) {
      summary {
          border: 1px solid rgb(255, 255, 255, 0.6);
          border-radius: 10px;
@@ -846,7 +766,7 @@
      gap: 30px;
  }
 
- @media (max-width:800px) {
+ @media (max-width:600px) {
      .footer {
          grid-template-columns: 1fr;
      }
